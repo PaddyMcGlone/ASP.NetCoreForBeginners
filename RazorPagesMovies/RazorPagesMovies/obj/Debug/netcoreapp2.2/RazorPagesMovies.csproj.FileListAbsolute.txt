@@ -28,3 +28,8 @@ C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netco
 C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\RazorPagesMovies.dll
 C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\RazorPagesMovies.pdb
 C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\RazorPagesMovies.csproj.CopyComplete
+C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Create.g.cshtml.cs
+C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Delete.g.cshtml.cs
+C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Details.g.cshtml.cs
+C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Edit.g.cshtml.cs
+C:\Code\ASPNetCoreForBeginners\RazorPagesMovies\RazorPagesMovies\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Index.g.cshtml.cs
