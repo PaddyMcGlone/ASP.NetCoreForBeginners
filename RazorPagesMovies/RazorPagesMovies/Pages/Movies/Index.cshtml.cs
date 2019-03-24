@@ -11,18 +11,33 @@ namespace RazorPagesMovies.Pages.Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPagesMovies.Models.RazorPagesMoviesContext _context;
+        private readonly RazorPagesMoviesContext _context;
 
-        public IndexModel(RazorPagesMovies.Models.RazorPagesMoviesContext context)
+        public IndexModel(RazorPagesMoviesContext context)
         {
             _context = context;
         }
 
-        public IList<RazorPagesMovies.Models.Movies> Movies { get;set; }
+        public IList<Models.Movies> Movies { get; set; }
 
-        public async Task OnGetAsync()
+        // The new 'Search' approach
+        public async Task OnGetAsync(string searchString)
         {
-            Movies = await _context.Movies.ToListAsync();
+            var movies = from m in _context.Movies
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(m => m.Title.Contains(searchString));
+            }
+
+            Movies = await movies.ToListAsync();
         }
+
+        // The inital approach                
+        //public async Task OnGetAsync()
+        //{
+        //    Movies = await _context.Movies.ToListAsync();
+        //}
     }
 }
